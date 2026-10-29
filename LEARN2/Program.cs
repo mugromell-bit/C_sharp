@@ -1,5 +1,10 @@
 ﻿//начало - 29.10.2026
 //коснпект написан с пониманием основ Python
+
+
+
+
+//29.10.2026
 /*                 ВЫВОД
 для вывода информации используется Console.WriteLine()
 */
@@ -194,18 +199,97 @@ else
 Console.WriteLine($"Your deposit is {deposit2 + 15}");
 
 
+/*               ОПЕРАТОР ВЫБОРА (SWITCH CASE)
+пример использования:
+*/
+int number = 13;
+switch (number) //switch(---) - то, с чем надо сравнить
+{
+    case 1: //case (---) - то, что сравнивается. вместо единицы могут быть любые значения и даже проверка на сходство типов данных
+        Console.WriteLine("Your number is 1.");
+        break; //break - завершает работу оператора
+    case 3:
+        Console.WriteLine("Your number is 3.");
+        break;
+    case 13:
+        Console.WriteLine("Your number is 13. Go to the 14th case.");
+        goto case 14; //передаёт управление кейсу 14, go to case 14
+        
+    case 14:
+        Console.WriteLine("You reached the 14th case.");
+        break;
+    
+    default: //default - выполнится, если никакие другие кейсы не выполнилиись
+        Console.WriteLine("Your number is unknown.");
+        break;
+}
 
+/*            ЦИКЛЫ
+в C# есть четыре вида циклов:
+for
+foreach
+while
+do ... while
+*/
 
+/*for
+- работает по индексу и используется для, например, перебора с изменением значений, как здесь:*/
 
+for (int i = 0; i < 5; i++) //int i - создаю счетчик, i < 5 - условие цикла, i++ - анлог i+=1
+{
+    Console.WriteLine($"Индекс: {i}");
+}
+//если for содержит только одну инструкцию, то можно убрать фигурные скобки:
+for (int i =  0; i < 5; i++) 
+    Console.WriteLine(i);
+//или
+for (int i =  0; i < 5; i++) Console.WriteLine(i);
 
+/*foreach
+- Read-Only цикл. Работает по элементам, а не индексам. С помощью него нельзя изменить, только вывести*/
+string[] sports = { "Football", "Burmaldaball", "Basketball" };
 
+foreach (string sport in sports)
+{
+    Console.WriteLine($"Let's play {sport}");
+}
+//также как и с for можно сокращать до одной строки без фигурных скобок
+foreach (string sport in sports) Console.WriteLine($"Let's play {sport}");
 
+/*while
+- принципиально ничем не отличается от while в Python*/
+int j = 6;
+while (j > 0)
+{
+    Console.WriteLine(j);
+    j--;
+}
 
+/*do...while
+- тот же while, но он в любом случае выполнится хотя бы один раз*/
+int bigNum = 10;
+do
+{
+    Console.WriteLine("Этот текст выведется один раз");
+    bigNum--;
+} 
+while (bigNum < 5); 
+//пример использования do...while - запрос данных пользователя. в любом случае хотя бы один раз надо запросить данный
 
+/*     CONTINUE И BREAK
+в C# они ничем не отличаются от своих версий в Python. continue пропускает текущую итерацию, break - Xпредварительно завершает цикл
+в C# оператора pass нет, так как пустые фигурные скобки после цикла и есть заглушка*/
+string klan = "Black Dice";
+if (klan == "333")
+{
+    //пустота и есть заглушка, pass не нужен
+}
+else
+{
+    Console.WriteLine("Not 333");
+}
 
-
-
-
+//текущий слайд - 43. следующая тема - массивы
 
 
 
