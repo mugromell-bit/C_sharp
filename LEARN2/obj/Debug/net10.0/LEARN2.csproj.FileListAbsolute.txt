@@ -1,0 +1,14 @@
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\bin\Debug\net10.0\LEARN2.exe
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\bin\Debug\net10.0\LEARN2.deps.json
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\bin\Debug\net10.0\LEARN2.runtimeconfig.json
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\bin\Debug\net10.0\LEARN2.dll
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\bin\Debug\net10.0\LEARN2.pdb
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.AssemblyInfoInputs.cache
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.AssemblyInfo.cs
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.csproj.CoreCompileInputs.cache
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.dll
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\refint\LEARN2.dll
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.pdb
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\LEARN2.genruntimeconfig.cache
+C:\Users\Tigran\RiderProjects\LEARN2\LEARN2\obj\Debug\net10.0\ref\LEARN2.dll
