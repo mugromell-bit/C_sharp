@@ -2,6 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LEARN2", "LEARN2\LEARN2.csproj", "{BD5018D3-FA36-48ED-A855-3F9A82000584}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7C7A4CD-4062-47C4-A290-9181A633BA01}"
+	ProjectSection(SolutionItems) = preProject
+		SingleFileApp1.cs = SingleFileApp1.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
