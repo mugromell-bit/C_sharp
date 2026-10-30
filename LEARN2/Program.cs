@@ -3,57 +3,56 @@
 
 
 
-
 //29.10.2026
 /*                 ВЫВОД
 для вывода информации используется Console.WriteLine()
 */
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
 /*                        ПЕРЕМЕННЫЕ И КОНСТАНТЫ
 */
-string boy; // определение переменной
-boy = "Tom"; // присваивание
+//string boy; // определение (объявление) переменной
+//boy = "Tom"; // присваивание
 
-Console.WriteLine($"Hello, {boy}"); 
+/*Console.WriteLine($"Hello, {boy}"); */
 //Для вывода переменной с текстом можно использовтаь так называемую интерполяцию (знак доллара $) как в примере выше.
 
 
-string anotherBoy = "Ben"; // инициализация переменной 
-Console.WriteLine($"Hello, {anotherBoy}");
+//string anotherBoy = "Ben"; // инициализация переменной 
+//Console.WriteLine($"Hello, {anotherBoy}");
 
-const int constanta = 15; // константа неизменна и должна быть только инициализирована
-Console.WriteLine($"{constanta} is a constanta");
+//const int constanta = 15; // константа неизменна и должна быть только инициализирована
+//Console.WriteLine($"{constanta} is a constanta");
 
 
 /*                  ТИПЫ ДАННЫХ
 все вещественные числа воспринимаются как double, поэтому нужын суффиксы
 */
 
-float a = 3.14f; //или F
-Console.WriteLine($"{a} is float");
+//float a = 3.14f; //или F
+//Console.WriteLine($"{a} is float");
 
-decimal b = 1005.17m; //M
-Console.WriteLine($"{b} is decimal");
+//decimal b = 1005.17m; //M
+//Console.WriteLine($"{b} is decimal");
 
 //все целые числа воспринимаются как int, поэтому нужны суффиксы
-uint c = 1005u; //U
-Console.WriteLine($"{c} is uint");
+//uint c = 1005u; //U
+//.WriteLine($"{c} is uint");
 
-long d = 12345L; //также есть l, но лучше использоваьть заглавную, чтобы не путать с единицей 
-Console.WriteLine($"{d} is long");
+//long d = 12345L; //также есть l, но лучше использоваьть заглавную, чтобы не путать с единицей 
+//Console.WriteLine($"{d} is long");
 
-ulong e = 12345ul; // UL
-Console.WriteLine($"{e} is ulong");
+//ulong e = 12345ul; // UL
+//Console.WriteLine($"{e} is ulong");
 
 
 /*                НЕЯВНАЯ ТПИПИЗАЦИЯ
 var нужен когда неизвестен тип данных переменной. По базе числа будут int, вещественные double, а строки string. можно использовать суффиксы
 */
-var f = 3.14; //double
-Console.WriteLine($"{f} is double");
-var newF = 3.14F; //float
-Console.WriteLine($"{newF} is float");
+//var f = 3.14; //double
+//Console.WriteLine($"{f} is double");
+//var newF = 3.14F; //float
+//Console.WriteLine($"{newF} is float");
 
 /*ОШИБКИ
 var c;
@@ -65,25 +64,25 @@ var something = null;
 */
 
 //для считывания ввода юзера используется:
-string /*?*/ userText = Console.ReadLine() ?? "Burmalda"; //всегда оставлять скобки пустыми, он не принимает текст как в пайтон
+//string /*?*/ userText = Console.ReadLine() ?? "Burmalda"; //всегда оставлять скобки пустыми, он не принимает текст как в пайтон
 //? после string значит, что если пользователь ничего не введет, то переменная получит значение null
 //?? "Burmalda" значит, что если переменная будет null, то в нее автоматически вставится значение "Burmalda"
-Console.WriteLine($"{userText} is a string");
+//Console.WriteLine($"{userText} is a string");
 
 
 //Console.ReadLine() все считывает как string, поэтому для считывания нужных данных есть методы:
 
-Console.Write("Enter your age: "); //Console.Write() не перекидывает на следуюущю строку, что удобно для запроса данных
-int age = Convert.ToInt32(Console.ReadLine()); //преобразует к типу int
-Console.WriteLine($"Your age is {age}");
+//Console.Write("Enter your age: "); //Console.Write() не перекидывает на следуюущю строку, что удобно для запроса данных
+//int age = Convert.ToInt32(Console.ReadLine()); //преобразует к типу int
+//Console.WriteLine($"Your age is {age}");
 
-Console.Write("Enter your height: ");
-double height = Convert.ToDouble(Console.ReadLine()); //преобразует к типу double
-Console.WriteLine($"Your height is {height}");
+//Console.Write("Enter your height: ");
+//double height = Convert.ToDouble(Console.ReadLine()); //преобразует к типу double
+//Console.WriteLine($"Your height is {height}");
 
-Console.Write("Enter your salary: ");
-decimal salary = Convert.ToDecimal(Console.ReadLine()); //преобразует к типу decimal
-Console.WriteLine($"Your salary is {salary}");
+//Console.Write("Enter your salary: ");
+//decimal salary = Convert.ToDecimal(Console.ReadLine()); //преобразует к типу decimal
+//Console.WriteLine($"Your salary is {salary}");
 
 
 /*                                          ПРЕОБРАЗОВАНИЕ БАЗОВЫХ ТИПОВ ДАННЫХ
@@ -128,11 +127,12 @@ byte b = (byte) a;
 
 //if/else
 
-string name = "Alex";
+//string name = "Alex";
 
-if (name == "Tom")
-    Console.WriteLine("Your name is Tom");
+//if (name == "Tom")
+    /*Console.WriteLine("Your name is Tom");*/
 
+/*
 else if  (name == "Ben")
     Console.WriteLine("Your name is Ben");
 
@@ -141,6 +141,7 @@ else if   (name == "Dundrik")
 
 else
     Console.WriteLine("Unknown name");
+    */
 
 
 /*тернарная операция
@@ -150,7 +151,7 @@ else
 суть тернарной операции в том, чтобы заменить длинный блок кода с условием и двумя исходами на одну строку.
 
 вместо:*/
-int x = 3;
+/*int x = 3;
 int y = 2;
 if (x < y)
     Console.WriteLine(x + y);
@@ -158,9 +159,9 @@ else
     Console.WriteLine(x - y);
 
 //можно сделать:
-int z = x < y ? (x + y) : (x - y);
+int z = x < y ? (x + y) : (x - y);*/
 //переменная z будет равна результату проверки. условие для x + y это x < y, если условие неверно, то работает else (в тернаре это двоеточик) x - y
-Console.WriteLine(z); //будет 1
+/*Console.WriteLine(z); //будет 1*/
 
 /*
 УПРАЖНЕНИЕ 1, 2 + РЕШЕНИЕ
@@ -172,6 +173,7 @@ Console.WriteLine(z); //будет 1
 В конце программа должна выводить сумму вклада с начисленными процентами.
 Для получения вводимого с клавиатуры числа используйте выражение Convert.ToDouble(Console.ReadLine())
 */
+/*
 Console.Write("Enter a deposit: ");
 double deposit = Convert.ToDouble(Console.ReadLine());
 if (deposit < 100)
@@ -181,6 +183,7 @@ else if (deposit is >= 100 and <= 200) //нельяз написать (100 < de
 else
     deposit *= 1.1;
 Console.WriteLine($"Your deposit is {deposit}");
+*/
 
 /*
 2.Изменим предыдущую задачу. 
@@ -188,6 +191,7 @@ Console.WriteLine($"Your deposit is {deposit}");
 И, допустим, сейчас банк решил доначислить по всем вкладам 15 единиц вне зависимости от их суммы. 
 Измените программу таким образом, чтобы к финальной сумме до начислялись бонусы.
 */
+/*
 Console.Write("Enter a second deposit: ");
 double deposit2 = Convert.ToDouble(Console.ReadLine());
 if (deposit2 < 100)
@@ -197,12 +201,13 @@ else if (deposit2 is >= 100 and <= 200)
 else
     deposit2 *= 1.1;
 Console.WriteLine($"Your deposit is {deposit2 + 15}");
+*/
 
 
 /*               ОПЕРАТОР ВЫБОРА (SWITCH CASE)
 пример использования:
 */
-int number = 13;
+/*int number = 13;
 switch (number) //switch(---) - то, с чем надо сравнить
 {
     case 1: //case (---) - то, что сравнивается. вместо единицы могут быть любые значения и даже проверка на сходство типов данных
@@ -222,7 +227,7 @@ switch (number) //switch(---) - то, с чем надо сравнить
     default: //default - выполнится, если никакие другие кейсы не выполнилиись
         Console.WriteLine("Your number is unknown.");
         break;
-}
+}*/
 
 /*            ЦИКЛЫ
 в C# есть четыре вида циклов:
@@ -235,6 +240,7 @@ do ... while
 /*for
 - работает по индексу и используется для, например, перебора с изменением значений, как здесь:*/
 
+/*
 for (int i = 0; i < 5; i++) //int i - создаю счетчик, i < 5 - условие цикла, i++ - анлог i+=1
 {
     Console.WriteLine($"Индекс: {i}");
@@ -246,7 +252,7 @@ for (int i =  0; i < 5; i++)
 for (int i =  0; i < 5; i++) Console.WriteLine(i);
 
 /*foreach
-- Read-Only цикл. Работает по элементам, а не индексам. С помощью него нельзя изменить, только вывести*/
+- Read-Only цикл. Работает по элементам, а не индексам. С помощью него нельзя изменить, только вывести#1#
 string[] sports = { "Football", "Burmaldaball", "Basketball" };
 
 foreach (string sport in sports)
@@ -257,28 +263,29 @@ foreach (string sport in sports)
 foreach (string sport in sports) Console.WriteLine($"Let's play {sport}");
 
 /*while
-- принципиально ничем не отличается от while в Python*/
+- принципиально ничем не отличается от while в Python#1#
 int j = 6;
 while (j > 0)
 {
     Console.WriteLine(j);
     j--;
-}
+}*/
 
 /*do...while
 - тот же while, но он в любом случае выполнится хотя бы один раз*/
-int bigNum = 10;
+/*int bigNum = 10;
 do
 {
     Console.WriteLine("Этот текст выведется один раз");
     bigNum--;
 } 
-while (bigNum < 5); 
+while (bigNum < 5); */
 //пример использования do...while - запрос данных пользователя. в любом случае хотя бы один раз надо запросить данный
 
 /*     CONTINUE И BREAK
-в C# они ничем не отличаются от своих версий в Python. continue пропускает текущую итерацию, break - Xпредварительно завершает цикл
+в C# они ничем не отличаются от своих версий в Python. continue пропускает текущую итерацию, break - предварительно завершает цикл
 в C# оператора pass нет, так как пустые фигурные скобки после цикла и есть заглушка*/
+/*
 string klan = "Black Dice";
 if (klan == "333")
 {
@@ -288,8 +295,286 @@ else
 {
     Console.WriteLine("Not 333");
 }
+*/
 
-//текущий слайд - 43. следующая тема - массивы
+//текущий слайд - 43/667. следующая тема - массивы
+
+
+
+//30.10.2026
+
+/*            МАССИВЫ
+- последовательная (с индексами (индексы работают как обычно, у первого элемента индекс 0 и тд)) группа (коллекция), в C# может хранить только один тип данных
+также массив может менять свое содержание, НО НЕ РАЗМЕРНОСТЬ
+
+
+объявление массива:
+<тип переменной> [] <имя массива> = new <тип переменной> [размерность массива]
+*/
+/*int [] massiv = new int [10];*/ //массив с именем massiv, хранящий переменные типа int и размеров в 10 элементов
+
+/*
+также массив можно инициализировать:
+*/
+/*char[] charArray = {'d', 'o', 'o', 'm'};*/
+/*
+важные различия - фигруные скобки {} используются при инициализации или заполнении самого массива, а квадратные [] используюися для поиска индекса (charArray[0]), для указания того, что это массив и для задавания размерности массива
+также при инициализации массива писать new, тип данных и размерность не нужно, по крайней мере на данномм этапе*/
+
+
+/*             ГЕНЕРАЦИЯ ЭЛЕМЕНТОВ МАССИВА
+
+для генерации случайных элементов используется класс Random
+надо создать его объект:
+Random <имя объекта> = new Random();
+*/
+Random rnd = new Random();
+
+//и теперь сам процесс заплолнения:
+ 
+/*for (int i=0; i<10 /*10 здесь - размер заполняемого массива#1#; i++)*/
+{
+    /*massiv[i] = rnd.Next(1,10);*/ //Next - метод класса Random, который даёт случайное целое число в заданном диапазоне
+}
+
+/*            ОСНОВНЫЕ МЕТОДЫ И СВОЙСТВА
+ 
+новый массив для наглядности:
+*/
+/*
+int[] burmaldaMassiv = { 1, 2, 3, 4, 5 };
+*/
+//Length - считает длину массива
+/*
+Console.WriteLine($"Massiv length is {burmaldaMassiv.Length}"); //выведет 5
+*/
+
+//Array.IndexOf(имя массива, образец) - определяет индекс первого вхождения образца в массив, а если такого образца нет, то возвращает -1. (образец - какая-то переменная)
+/*
+Console.WriteLine($"Первый образец 3 в массиве Massiv находится на индексе: {Array.IndexOf(massiv, 3)}"); //вернет 2
+*/
+
+//Array.LastIndexOf - определяет индекс ПОСЛЕДНЕГО вхождения образца. также возвращает -1, если образцов нет.
+//оба метода используются только для одномерных массивов
+
+//Array.Sort(имя массива) - сортирует массив от меньшего к большему (с числами от меньшего к большему, с буквами/строками - в алфавитном порядке). Важно понимать - Sort ничего не возвращает и его нельзя вывести.
+//Console.WriteLine($"Sorted burmaldaMassiv: {Array.Sort(burmaldaMassiv)}"); - не сработает, так как Sort просто меняет массив, но не возвращает его
+/*
+Array.Sort(burmaldaMassiv);
+*/
+
+//Array.Reverse(имя массива) - переворчаивает все элменты массива
+/*
+Array.Reverse(burmaldaMassiv);//из { 1, 2, 3, 4, 5 } стало { 5, 4, 3, 2, 1 }
+*/
+
+/*     ПЕРЕБОР ЦИКЛОМ FOREACH
+foreach создан для перебора, поэтому все, что надо сделать, это написать:
+*/
+/*foreach (int i /*int i - временная переменнаая, и ее тип должен совпадать с типом данных массива#1#
+         in burmaldaMassiv /*имя массива#1#)*/
+{
+    /*
+    Console.WriteLine(i); //будет выведен отсортированный и отзеркаленный burmaldaMassiv
+*/
+}
+/*УПРАЖНЕНИЕ 3, 4, 5, 6, 7, 8 + РЕШЕНИЕ
+3. Дан целочисленный массив состоящий из 10 элементов. 
+Элементы массива принимают значения в интервале [-7; 7]. 
+Найдите последнее вхождение в массив элемента n (n вводится с клавиатуры). Подсчитайте количество элементов массива меньших n.
+*/
+/*int [] dasMassiv = new int [10];
+for (int i = 0; i < 10; i++)
+{
+    dasMassiv[i] = rnd.Next(-7, 8);
+}
+foreach (int i in dasMassiv) Console.WriteLine(i);
+Console.Write("Enter n: ");
+sbyte n = Convert.ToSByte(Console.ReadLine());
+Console.WriteLine($"Последнее вхождение элемента {n} в dasMassiv: {Array.LastIndexOf(dasMassiv, n)}");
+int lessThanN = 0;
+foreach (int ele in dasMassiv)
+{
+    if (ele < n)
+    {
+        lessThanN++;
+    }
+}
+Console.WriteLine($"В dasMassiv чисел {lessThanN} чисел меньше чем {n}.");*/
+
+//4. Дан целочисленный массив состоящий из n элементов.
+//Элементы массива принимают значения в интервале [-10; 10]. Найдите максимальный элемент массива.
+
+/*
+Console.Write("Enter n: ");
+sbyte n = Convert.ToSByte(Console.ReadLine());
+sbyte[] dasMassiv = new sbyte [n];
+
+for (int i = 0; i < n; i++) dasMassiv[i] = (sbyte)rnd.Next(-10, 11);
+
+foreach (sbyte i in dasMassiv)
+    Console.WriteLine(i + " ");
+sbyte maxValue = dasMassiv[0];
+foreach (sbyte val in dasMassiv)
+{
+    if (val > maxValue)
+        maxValue = val;
+}
+Console.WriteLine($"Max value in dasMassiv is {maxValue}");
+*/
+//5. Дано целое число N (> 1), а также первый член A и разность D арифметической прогрессии.
+//Сформировать и вывести массив размера N, содержащий N первых членов данной прогрессии:
+/*A, A + D, A + 2·D, A + 3·D, … .*/
+
+/*
+Console.Write("Enter n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter A: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter D: ");
+int d = Convert.ToInt32(Console.ReadLine());
+int [] dasMassiv = new int [n];
+
+int curValue = a;
+for (int i = 0; i < n; i++)
+{
+    dasMassiv[i] = curValue;
+    curValue += d;
+}
+foreach (int i in dasMassiv)
+{
+    Console.Write(i + " ");
+}
+*/
+
+//6. Дано целое число N (> 1), а также первый член A и знаменатель D геометрической прогрессии.
+//Сформировать и вывести массив размера N, содержащий N первых членов данной прогрессии:
+//A, A·D, A·D2, A·D3
+
+/*Console.Write("Enter n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter A: ");
+long a = Convert.ToInt64(Console.ReadLine());
+Console.Write("Enter D: ");
+long d = Convert.ToInt64(Console.ReadLine());
+long [] dasMassiv = new long [n];
+long curValue = a;
+for (int i = 0; i < n; i++)
+{
+    dasMassiv[i] = curValue;
+    curValue *= d;
+}
+foreach (int i in dasMassiv)
+{
+    Console.Write(i + " ");
+}*/
+
+
+//7. Даны целые числа N (> 2), A и B.
+//Сформировать и вывести целочисленный массив размера N, первый элемент которого равен A, второй равен B,
+//а каждый последующий элемент равен сумме всех предыдущих.
+
+/*
+Console.Write("Enter n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter A: ");
+long a = Convert.ToInt64(Console.ReadLine());
+Console.Write("Enter B: ");
+long b = Convert.ToInt64(Console.ReadLine());
+long [] dasMassiv = new long [n];
+dasMassiv[0] = a;
+dasMassiv[1] = b;
+long summa = a + b;
+for (int i = 2; i < n; i++)
+{
+    dasMassiv[i] = summa;
+    summa += dasMassiv[i];
+}
+*/
+
+//текущий слайд - 57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
